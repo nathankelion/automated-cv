@@ -1,3 +1,13 @@
+## 1.0.0 (2026-09-29)
+
+### CI
+
+* **release:** configure fork releases and Pages ([72c02f0](https://github.com/nathankelion/automated-cv/commit/72c02f060535d19cf5c2559489ec84a46dd6f446))
+
+### Features
+
+* **resume:** update CV for Nathan Kelion ([e163cfc](https://github.com/nathankelion/automated-cv/commit/e163cfc86ad6d11b1dbceec97f50644bea0bd172))
+
 ## [2.1.0](https://github.com/kirintwn/resume/compare/v2.0.0...v2.1.0) (2022-05-13)
 
 
