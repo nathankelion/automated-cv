@@ -1,0 +1,54 @@
+% Project entries use one title/date row because they have no separate role line.
+\newcommand*{\cvproject}[3]{%
+  \vspace{2mm}
+  \setlength\tabcolsep{0pt}%
+  \setlength{\extrarowheight}{0pt}%
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}%
+    \entrytitlestyle{#1} & \entrydatestyle{#2} \\
+    \multicolumn{2}{L{\textwidth}}{\descriptionstyle{\vspace{0mm}#3}}%
+  \end{tabular*}%
+}
+
+%-------------------------------------------------------------------------------
+%  SECTION TITLE
+%-------------------------------------------------------------------------------
+\vspace{4mm}
+\cvsection{Personal Projects}
+
+%-------------------------------------------------------------------------------
+%  CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+  \cvproject
+  {Facial Image Alignment and Visualisation Tool}
+  {2026}
+  {
+    \begin{cvitems}
+      \item {Developed a Python computer vision tool, inspired by my own Invisalign journey, to align facial images and generate consistent progress visualisations.}
+      \item {Used OpenCV and MediaPipe for facial landmark detection, image alignment, morph video generation, and side-by-side comparison outputs.}
+      \item {Enhanced robustness with alignment quality checks, error handling, and automated output generation.}
+    \end{cvitems}
+  }
+
+  \cvproject
+  {Mortgage Calculator Web Application}
+  {2024}
+  {
+    \begin{cvitems}
+      \item {Developed a Python and Streamlit web application to calculate mortgage repayments and affordability based on borrowing assumptions and desired monthly repayments.}
+      \item {Used Bank of England yield curve data to support repayment modelling, affordability estimates, and Stamp Duty calculations for first-time buyers and standard residential purchases.}
+      \item {Enhanced robustness with automated data updates, improved calculation accuracy, refactoring, test coverage, and clearer validation/error handling.}
+    \end{cvitems}
+  }
+
+  \cvproject
+  {BBC Good Food Scraper and Web Application}
+  {2023}
+  {
+    \begin{cvitems}
+      \item {Developed an end-to-end Python data project to improve recipe filtering based on macro-nutrient targets and available ingredients.}
+      \item {Used Python, SQL, GitHub Actions, and AWS RDS to automate weekly collection and storage of recipe data in a cloud-hosted database.}
+      \item {Created a Streamlit web application to give non-technical users an interactive way to search and filter recipes.}
+    \end{cvitems}
+  }
+\end{cventries}
